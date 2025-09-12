@@ -32,28 +32,6 @@ const Courses = () => {
       projects: ["Smart Home System", "Weather Station", "Security Camera", "Plant Monitoring Device"]
     },
     {
-      id: 2,
-      icon: Zap,
-      title: "Robotics with Zimrobo Alpha Set A",
-      age: "Ages 10-16",
-      description: "Create and program robots using the Zimrobo Alpha robotics kit. Learn mechanical engineering concepts alongside programming logic.",
-      duration: "10 weeks",
-      level: "Beginner to Intermediate",
-      skills: ["Mechanical Assembly", "Motor Control", "Sensor Integration", "Algorithm Design", "Problem Solving"],
-      projects: ["Line Following Robot", "Obstacle Avoidance Bot", "Remote Control Car", "Sumo Wrestling Robot"]
-    },
-    {
-      id: 3,
-      icon: Printer,
-      title: "3D Printing & Design",
-      age: "Ages 8-18",
-      description: "Design and print 3D models while learning CAD software and understanding manufacturing processes.",
-      duration: "6 weeks",
-      level: "Beginner",
-      skills: ["3D Modeling", "CAD Software", "Design Thinking", "Manufacturing", "Prototyping"],
-      projects: ["Custom Phone Case", "Miniature House", "Mechanical Puzzle", "Educational Model"]
-    },
-    {
       id: 4,
       icon: Code2,
       title: "Python Programming Basics",
@@ -123,8 +101,8 @@ const Courses = () => {
 
   const ageGroups = [
     { range: "Ages 6-8", courses: ["Computer Literacy", "Programming with Minecraft"], focus: "Digital Basics & Visual Learning" },
-    { range: "Ages 9-12", courses: ["Python Basics", "3D Printing", "Minecraft Programming"], focus: "Creative Problem Solving" },
-    { range: "Ages 13-15", courses: ["Web Development", "IoT Projects", "Robotics"], focus: "Technical Skills & Projects" },
+    { range: "Ages 9-12", courses: ["Python Basics", "Minecraft Programming"], focus: "Creative Problem Solving" },
+    { range: "Ages 13-15", courses: ["Web Development", "IoT Projects"], focus: "Technical Skills & Projects" },
     { range: "Ages 16-18", courses: ["AI/ML", "Computer Science", "Advanced Programming"], focus: "Career Preparation" }
   ];
 
