@@ -24,24 +24,10 @@ const Home = () => {
   const courses = [
     {
       icon: Cpu,
-      title: "IoT with Microbit & Arduino",
+      title: "Robotics with Microbit & Arduino",
       age: "Ages 12-18",
-      description: "Build smart devices and learn Internet of Things fundamentals",
+      description: "Build and program robots using Microbit and Arduino controllers",
       duration: "8 weeks"
-    },
-    {
-      icon: Zap,
-      title: "Robotics with Zimrobo",
-      age: "Ages 10-16", 
-      description: "Create and program robots with hands-on robotics kits",
-      duration: "10 weeks"
-    },
-    {
-      icon: Printer,
-      title: "3D Printing & Design",
-      age: "Ages 8-18",
-      description: "Design and print 3D models, learn CAD software",
-      duration: "6 weeks"
     },
     {
       icon: Code2,
