@@ -23,13 +23,13 @@ const Courses = () => {
     {
       id: 1,
       icon: Cpu,
-      title: "IoT with Microbit, Raspberry Pi & Arduino",
+      title: "Robotics with Microbit & Arduino",
       age: "Ages 12-18",
-      description: "Learn to build smart devices and understand Internet of Things fundamentals. Students will create weather stations, home automation systems, and sensor networks.",
+      description: "Build and program robots using Microbit and Arduino microcontrollers. Learn robotics fundamentals through hands-on projects that move, sense, and interact with their environment.",
       duration: "8 weeks",
       level: "Intermediate",
-      skills: ["Circuit Design", "Sensor Programming", "WiFi Connectivity", "Data Collection", "IoT Protocols"],
-      projects: ["Smart Home System", "Weather Station", "Security Camera", "Plant Monitoring Device"]
+      skills: ["Robot Programming", "Motor Control", "Sensor Integration", "Circuit Design", "Mechanical Assembly"],
+      projects: ["Line Following Robot", "Obstacle Avoidance Bot", "Remote Control Robot", "Interactive Pet Robot"]
     },
     {
       id: 4,
@@ -102,7 +102,7 @@ const Courses = () => {
   const ageGroups = [
     { range: "Ages 6-8", courses: ["Computer Literacy", "Programming with Minecraft"], focus: "Digital Basics & Visual Learning" },
     { range: "Ages 9-12", courses: ["Python Basics", "Minecraft Programming"], focus: "Creative Problem Solving" },
-    { range: "Ages 13-15", courses: ["Web Development", "IoT Projects"], focus: "Technical Skills & Projects" },
+    { range: "Ages 13-15", courses: ["Web Development", "Robotics Projects"], focus: "Technical Skills & Projects" },
     { range: "Ages 16-18", courses: ["AI/ML", "Computer Science", "Advanced Programming"], focus: "Career Preparation" }
   ];
 
@@ -259,7 +259,7 @@ const Courses = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Most courses only require a computer with internet access. For hardware courses like IoT and Robotics, 
+                  Most courses only require a computer with internet access. For hardware courses like Robotics, 
                   we provide equipment kits that are shipped to your home.
                 </p>
               </CardContent>
