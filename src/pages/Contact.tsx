@@ -58,22 +58,22 @@ const Contact = () => {
       icon: Phone,
       title: "Call Us",
       description: "Mon-Fri, 9AM-6PM EST",
-      value: "+1 (555) 123-4567",
-      action: "tel:+15551234567"
+      value: "+254728541658",
+      action: "tel:+254728541658"
     },
     {
       icon: MessageCircle,
       title: "WhatsApp",
       description: "Quick answers to your questions",
       value: "Chat with us",
-      action: "https://wa.me/15551234567"
+      action: "https://wa.me/254728541658"
     }
   ];
 
   const socialLinks = [
-    { icon: Facebook, name: "Facebook", url: "https://facebook.com/kodbudstechub" },
-    { icon: Instagram, name: "Instagram", url: "https://instagram.com/kodbudstechub" },
-    { icon: Linkedin, name: "LinkedIn", url: "https://linkedin.com/company/kodbudstechub" },
+    { icon: Facebook, name: "Facebook", url: "https://www.facebook.com/gloria.ngure/" },
+    { icon: Instagram, name: "Instagram", url: "hhttps://www.instagram.com/kodbuds_techub?igsh=MXYzbjBtNXNqeWVhdw==ttps://instagram.com/kodbudstechub" },
+    { icon: Linkedin, name: "LinkedIn", url: "www.linkedin.com/in/kodbudstechub" },
     { icon: Youtube, name: "YouTube", url: "https://youtube.com/@kodbudstechub" }
   ];
 
