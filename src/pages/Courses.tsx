@@ -126,7 +126,7 @@ const Courses = () => {
           </h1>
           <p className="text-xl text-white/90 leading-relaxed">
             {scheduleNote}</p>
-            
+           <p></p> 
           <p className="text-xl text-white/90 leading-relaxed">
             From beginner-friendly introductions to advanced programming concepts, 
             our courses are designed to grow with your child's interests and abilities.
