@@ -124,7 +124,9 @@ const Courses = () => {
             Explore Our{' '}
             <span className="text-accent">Programming Courses</span>
           </h1>
-          <p>{scheduleNote}</p>
+          <p className="text-xl text-white/90 leading-relaxed">
+            {scheduleNote}</p>
+            
           <p className="text-xl text-white/90 leading-relaxed">
             From beginner-friendly introductions to advanced programming concepts, 
             our courses are designed to grow with your child's interests and abilities.
