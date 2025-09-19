@@ -25,29 +25,29 @@ const Home = () => {
     {
       icon: Cpu,
       title: "Robotics with Microbit & Arduino",
-      age: "Ages 12-18",
-      description: "Build and program robots using Microbit and Arduino controllers",
+      age: "Ages 10-18",
+      description: "Learn to design, build, and program simple robots with Microbit and Arduino.",
       duration: "8 weeks"
     },
     {
       icon: Code2,
       title: "Python Programming",
       age: "Ages 10-18",
-      description: "Master Python from basics to advanced applications",
+      description: "Start coding with Python and create games, apps, and projects step by step.",
       duration: "12 weeks"
     },
     {
       icon: Globe,
       title: "Web Development",
       age: "Ages 12-18", 
-      description: "Build websites with HTML, CSS, JavaScript, and React",
+      description: "Build modern websites using HTML, CSS, JavaScript, and React.",
       duration: "14 weeks"
     },
     {
       icon: Brain,
       title: "AI & Machine Learning",
       age: "Ages 14-18",
-      description: "Explore artificial intelligence and build smart applications",
+      description: "EDiscover artificial intelligence and create your own smart applications.",
       duration: "10 weeks"
     }
   ];
@@ -92,7 +92,7 @@ const Home = () => {
                 Tech Skills
               </h1>
               <p className="text-xl md:text-2xl text-white/90 mb-8 leading-relaxed">
-                Interactive programming courses for ages 6-18. From IoT and robotics to AI and web development - all from the comfort of home.
+                Interactive programming courses for ages 6-18. From Robotics to AI to Web Development - all from the comfort of home.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button variant="accent" size="lg" className="text-lg">

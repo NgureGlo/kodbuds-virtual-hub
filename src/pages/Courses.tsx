@@ -35,7 +35,7 @@ const Courses = () => {
       id: 4,
       icon: Code2,
       title: "Python Programming Basics",
-      age: "Ages 11-18",
+      age: "Ages 10-18",
       description: "Learn Python programming through small, fun exercises and simple games. Perfect for beginners to coding.",
       duration: "8 weeks (Saturdays) / 4 weeks (holidays)",
       level: "Intermediate",
@@ -68,7 +68,7 @@ const Courses = () => {
       id: 7,
       icon: Brain,
       title: "AI & Machine Learning",
-      age: "Ages 12-18",
+      age: "Ages 14-18",
       description: "A gentle introduction to AI and Machine Learning using beginner-friendly tools. Understand how computers recognize patterns.",
       duration: "6 weeks (Saturdays) / 3 weeks (holidays)",
       level: "Advanced",
@@ -124,7 +124,7 @@ const Courses = () => {
           Classes run virtually every Saturday during school terms.
           During school holidays, sessions are held 3 days a week virtually for faster progress.
           </p> 
-          
+
           <p className="text-xl text-white/90 leading-relaxed">
             From beginner-friendly introductions to advanced programming concepts, 
             our courses are designed to grow with your child's interests and abilities.
