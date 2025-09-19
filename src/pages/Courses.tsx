@@ -27,7 +27,7 @@ const Courses = () => {
       age: "Ages 10-18",
       description: "Introduction to robotics using Microbit and Arduino. Learn how to connect simple sensors, control lights, and move small motors.",
       duration: "6 weeks (Saturdays) / 3 weeks (holidays)",
-      level: "Beginner",
+      level: "Beginner - Intermediate",
       skills: ["Basic Coding", "LED Control", "Simple Motor Use", "Intro to Sensors"],
       projects: ["Blinking LED", "Traffic Light Simulation", "Simple Buzzer Alarm", "Fan Motor Control"]
     },
@@ -38,7 +38,7 @@ const Courses = () => {
       age: "Ages 11-18",
       description: "Learn Python programming through small, fun exercises and simple games. Perfect for beginners to coding.",
       duration: "8 weeks (Saturdays) / 4 weeks (holidays)",
-      level: "Beginner",
+      level: "Intermediate",
       skills: ["Printing Messages", "Variables", "Basic Math in Python", "If Statements", "Loops"],
       projects: ["Hello World App", "Age Checker", "Even or Odd Checker", "Simple Calculator"]
     },
@@ -49,7 +49,7 @@ const Courses = () => {
       age: "Ages 12-18",
       description: "Create simple websites using HTML and CSS. Learn how to add text, images, links, and style your pages.",
       duration: "10 weeks (Saturdays) / 5 weeks (holidays)",
-      level: "Beginner",
+      level: "Intermediate - Advanced",
       skills: ["HTML Basics", "CSS Styling", "Adding Links & Images", "Page Layout"],
       projects: ["Personal Profile Page", "School Timetable Page", "Simple Blog Page", "Photo Gallery"]
     },
@@ -71,7 +71,7 @@ const Courses = () => {
       age: "Ages 12-18",
       description: "A gentle introduction to AI and Machine Learning using beginner-friendly tools. Understand how computers recognize patterns.",
       duration: "6 weeks (Saturdays) / 3 weeks (holidays)",
-      level: "Beginner",
+      level: "Advanced",
       skills: ["Patterns in Data", "Simple Predictions", "Image Recognition Basics"],
       projects: ["Emoji Sorter", "Yes/No Prediction Game", "Simple Chatbot", "Color Classifier"]
     },
