@@ -57,7 +57,7 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Call Us",
-      description: "Mon-Fri, 9AM-6PM EST",
+      description: "Mon-Fri, 4PM-8PM EAT; Sat, 8AM-12PM EAT",
       value: "+254728541658",
       action: "tel:+254728541658"
     },
@@ -72,8 +72,8 @@ const Contact = () => {
 
   const socialLinks = [
     { icon: Facebook, name: "Facebook", url: "https://www.facebook.com/gloria.ngure/" },
-    { icon: Instagram, name: "Instagram", url: "hhttps://www.instagram.com/kodbuds_techub?igsh=MXYzbjBtNXNqeWVhdw==ttps://instagram.com/kodbudstechub" },
-    { icon: Linkedin, name: "LinkedIn", url: "www.linkedin.com/in/kodbudstechub" },
+    { icon: Instagram, name: "Instagram", url: "https://www.instagram.com/kodbuds_techub" },
+    { icon: Linkedin, name: "LinkedIn", url: "https://www.linkedin.com/in/kodbudstechub" },
     { icon: Youtube, name: "YouTube", url: "https://youtube.com/@kodbudstechub" }
   ];
 
@@ -199,7 +199,7 @@ const Contact = () => {
                           type="tel"
                           value={formData.phone}
                           onChange={(e) => handleInputChange('phone', e.target.value)}
-                          placeholder="+1 (555) 123-4567"
+                          placeholder="+254712345678"
                         />
                       </div>
                       <div>
@@ -226,9 +226,7 @@ const Contact = () => {
                           <SelectValue placeholder="Select a course" />
                         </SelectTrigger>
                         <SelectContent>
-                          <SelectItem value="iot">IoT with Microbit & Arduino</SelectItem>
-                          <SelectItem value="robotics">Robotics with Zimrobo</SelectItem>
-                          <SelectItem value="3dprinting">3D Printing & Design</SelectItem>
+                          <SelectItem value="iot">Robotics with Microbit & Arduino</SelectItem>
                           <SelectItem value="python">Python Programming</SelectItem>
                           <SelectItem value="webdev">Web Development</SelectItem>
                           <SelectItem value="computer-literacy">Computer Literacy</SelectItem>
@@ -299,11 +297,11 @@ const Contact = () => {
                 <h3 className="text-xl font-semibold mb-4">Office Hours</h3>
                 <div className="flex items-center text-muted-foreground mb-2">
                   <Clock className="h-4 w-4 mr-2" />
-                  <span>Monday - Friday: 9:00 AM - 6:00 PM EST</span>
+                  <span>Monday - Friday: 4:00 PM - 8:00 PM EAT</span>
                 </div>
                 <div className="flex items-center text-muted-foreground mb-2">
                   <Clock className="h-4 w-4 mr-2" />
-                  <span>Saturday: 10:00 AM - 4:00 PM EST</span>
+                  <span>Saturday: 8:00 AM - 12:00 PM EAT</span>
                 </div>
                 <div className="flex items-center text-muted-foreground">
                   <Clock className="h-4 w-4 mr-2" />
