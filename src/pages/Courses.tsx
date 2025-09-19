@@ -106,10 +106,6 @@ const Courses = () => {
     { range: "Ages 16-18", courses: ["AI/ML", "Web Development", "Advanced Programming"], focus: "Career Preparation" }
   ];
 
-  const scheduleNote = 
-    "Classes run virtually every Saturday during school terms. " +
-    "During school holidays, sessions are held 3 days a week virtually for faster progress.";
-
 
 
   return (
@@ -124,9 +120,11 @@ const Courses = () => {
             Explore Our{' '}
             <span className="text-accent">Programming Courses</span>
           </h1>
-          <p className="text-xl text-white/90 leading-relaxed">
-            {scheduleNote}</p>
-           <p></p> 
+          <p className="text-xl text-white/90 leading-relaxed mb-6">
+          Classes run virtually every Saturday during school terms.
+          During school holidays, sessions are held 3 days a week virtually for faster progress.
+          </p> 
+          
           <p className="text-xl text-white/90 leading-relaxed">
             From beginner-friendly introductions to advanced programming concepts, 
             our courses are designed to grow with your child's interests and abilities.
