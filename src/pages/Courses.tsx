@@ -24,87 +24,93 @@ const Courses = () => {
       id: 1,
       icon: Cpu,
       title: "Robotics with Microbit & Arduino",
-      age: "Ages 12-18",
-      description: "Build and program robots using Microbit and Arduino microcontrollers. Learn robotics fundamentals through hands-on projects that move, sense, and interact with their environment.",
-      duration: "8 weeks",
-      level: "Intermediate",
-      skills: ["Robot Programming", "Motor Control", "Sensor Integration", "Circuit Design", "Mechanical Assembly"],
-      projects: ["Line Following Robot", "Obstacle Avoidance Bot", "Remote Control Robot", "Interactive Pet Robot"]
+      age: "Ages 10-18",
+      description: "Introduction to robotics using Microbit and Arduino. Learn how to connect simple sensors, control lights, and move small motors.",
+      duration: "6 weeks (Saturdays) / 3 weeks (holidays)",
+      level: "Beginner",
+      skills: ["Basic Coding", "LED Control", "Simple Motor Use", "Intro to Sensors"],
+      projects: ["Blinking LED", "Traffic Light Simulation", "Simple Buzzer Alarm", "Fan Motor Control"]
     },
     {
       id: 4,
       icon: Code2,
       title: "Python Programming Basics",
-      age: "Ages 10-18",
-      description: "Master Python from basics to advanced applications. Learn programming fundamentals through games, apps, and data projects.",
-      duration: "12 weeks",
-      level: "Beginner to Advanced",
-      skills: ["Variables & Data Types", "Functions", "Object-Oriented Programming", "File Handling", "Libraries"],
-      projects: ["Text Adventure Game", "Password Generator", "Web Scraper", "Personal Finance Tracker"]
+      age: "Ages 11-18",
+      description: "Learn Python programming through small, fun exercises and simple games. Perfect for beginners to coding.",
+      duration: "8 weeks (Saturdays) / 4 weeks (holidays)",
+      level: "Beginner",
+      skills: ["Printing Messages", "Variables", "Basic Math in Python", "If Statements", "Loops"],
+      projects: ["Hello World App", "Age Checker", "Even or Odd Checker", "Simple Calculator"]
     },
     {
       id: 5,
       icon: Globe,
       title: "Web Development",
       age: "Ages 12-18",
-      description: "Build modern websites and web applications using HTML, CSS, JavaScript, and React. Learn both frontend and basic backend concepts.",
-      duration: "14 weeks",
-      level: "Beginner to Intermediate",
-      skills: ["HTML & CSS", "JavaScript", "React", "Responsive Design", "API Integration"],
-      projects: ["Personal Portfolio", "Task Manager App", "E-commerce Site", "Social Media Dashboard"]
+      description: "Create simple websites using HTML and CSS. Learn how to add text, images, links, and style your pages.",
+      duration: "10 weeks (Saturdays) / 5 weeks (holidays)",
+      level: "Beginner",
+      skills: ["HTML Basics", "CSS Styling", "Adding Links & Images", "Page Layout"],
+      projects: ["Personal Profile Page", "School Timetable Page", "Simple Blog Page", "Photo Gallery"]
     },
     {
       id: 6,
       icon: Monitor,
       title: "Computer Literacy Fundamentals",
-      age: "Ages 6-12",
-      description: "Essential computer skills including typing, file management, internet safety, and basic software usage.",
-      duration: "4 weeks",
+      age: "Ages 6-11",
+      description: "Learn essential computer skills like typing, saving files, using safe passwords, and browsing safely.",
+      duration: "4 weeks (Saturdays) / 2 weeks (holidays)",
       level: "Beginner",
-      skills: ["Typing Skills", "File Management", "Internet Safety", "Software Basics", "Digital Citizenship"],
-      projects: ["Digital Presentation", "Basic Spreadsheet", "Safe Email Setup", "File Organization System"]
+      skills: ["Typing Practice", "File Saving", "Basic Internet Safety", "Using Simple Apps"],
+      projects: ["Create a Digital Poster", "Organize Files in Folders", "Write a Short Document", "Make a Simple Slideshow"]
     },
     {
       id: 7,
       icon: Brain,
       title: "AI & Machine Learning",
-      age: "Ages 14-18",
-      description: "Explore artificial intelligence and machine learning concepts. Build smart applications using Python and ML libraries.",
-      duration: "10 weeks",
-      level: "Advanced",
-      skills: ["ML Algorithms", "Data Analysis", "Neural Networks", "AI Ethics", "Model Training"],
-      projects: ["Image Classifier", "Chatbot", "Recommendation System", "Predictive Model"]
+      age: "Ages 12-18",
+      description: "A gentle introduction to AI and Machine Learning using beginner-friendly tools. Understand how computers recognize patterns.",
+      duration: "6 weeks (Saturdays) / 3 weeks (holidays)",
+      level: "Beginner",
+      skills: ["Patterns in Data", "Simple Predictions", "Image Recognition Basics"],
+      projects: ["Emoji Sorter", "Yes/No Prediction Game", "Simple Chatbot", "Color Classifier"]
     },
     {
       id: 8,
       icon: BookOpen,
       title: "Computer Science Fundamentals",
-      age: "Ages 14-18",
-      description: "Core CS concepts including algorithms, data structures, and computational thinking for students preparing for advanced studies.",
-      duration: "12 weeks",
-      level: "Intermediate to Advanced",
-      skills: ["Algorithms", "Data Structures", "Time Complexity", "Problem Solving", "Mathematical Thinking"],
-      projects: ["Sorting Visualizer", "Search Algorithm", "Data Structure Library", "Algorithm Race Game"]
+      age: "Ages 9-12",
+      description: "Learn problem-solving through simple algorithms and games. Understand how computers follow step-by-step instructions.",
+      duration: "8 weeks (Saturdays) / 4 weeks (holidays)",
+      level: "Beginner",
+      skills: ["Step-by-Step Thinking", "Basic Algorithms", "Patterns & Sequences"],
+      projects: ["Sorting Numbers Game", "Guess the Number Game", "Drawing Shapes with Instructions", "Treasure Hunt Algorithm"]
     },
     {
       id: 9,
       icon: Gamepad2,
       title: "Programming with Minecraft",
-      age: "Ages 8-14",
-      description: "Learn programming concepts through Minecraft modding and automation. Make the game do amazing things with code!",
-      duration: "8 weeks",
+      age: "Ages 8-11",
+      description: "Learn coding by making fun changes inside Minecraft. Use block-based coding to create cool worlds and simple automations.",
+      duration: "6 weeks (Saturdays) / 3 weeks (holidays)",
       level: "Beginner",
-      skills: ["Block-Based Coding", "Logic & Loops", "Functions", "Events", "Game Design"],
-      projects: ["Automated Farm", "Castle Builder", "Mini-Game Creator", "Custom Mods"]
+      skills: ["Block Coding", "Loops", "Events", "Game Design Basics"],
+      projects: ["Build a House Automatically", "Make Fireworks", "Create a Maze", "Simple Mini-Game"]
     }
   ];
 
   const ageGroups = [
     { range: "Ages 6-8", courses: ["Computer Literacy", "Programming with Minecraft"], focus: "Digital Basics & Visual Learning" },
-    { range: "Ages 9-12", courses: ["Python Basics", "Minecraft Programming"], focus: "Creative Problem Solving" },
-    { range: "Ages 13-15", courses: ["Web Development", "Robotics Projects"], focus: "Technical Skills & Projects" },
-    { range: "Ages 16-18", courses: ["AI/ML", "Computer Science", "Advanced Programming"], focus: "Career Preparation" }
+    { range: "Ages 9-11", courses: ["Computer Science Fundamentals", "Programming with Minecraft", "Robotics Projects", "Python Basics"], focus: "Creative Problem Solving" },
+    { range: "Ages 12-15", courses: ["Robotics Projects", "Python Basics", "Web Development", "AI/ML"], focus: "Technical Skills & Projects" },
+    { range: "Ages 16-18", courses: ["AI/ML", "Web Development", "Advanced Programming"], focus: "Career Preparation" }
   ];
+
+  const scheduleNote = 
+    "Classes run virtually every Saturday during school terms. " +
+    "During school holidays, sessions are held 3 days a week virtually for faster progress.";
+
+
 
   return (
     <div className="min-h-screen pt-16">
@@ -118,6 +124,7 @@ const Courses = () => {
             Explore Our{' '}
             <span className="text-accent">Programming Courses</span>
           </h1>
+          <p>{scheduleNote}</p>
           <p className="text-xl text-white/90 leading-relaxed">
             From beginner-friendly introductions to advanced programming concepts, 
             our courses are designed to grow with your child's interests and abilities.
