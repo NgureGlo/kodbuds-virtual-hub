@@ -25,36 +25,131 @@ const Courses = () => {
       icon: Cpu,
       title: "Robotics with Microbit & Arduino",
       age: "Ages 10-18",
-      description: "Introduction to robotics using Microbit and Arduino. Learn how to connect simple sensors, control lights, and move small motors.",
-      duration: "6 weeks (Saturdays) / 3 weeks (holidays)",
-      level: "Beginner - Intermediate",
-      skills: ["Basic Coding", "LED Control", "Simple Motor Use", "Intro to Sensors"],
-      projects: ["Blinking LED", "Traffic Light Simulation", "Simple Buzzer Alarm", "Fan Motor Control"]
+      description: "Master robotics through a comprehensive 3-phase program. Start with Microbit foundations, advance to Arduino circuits, and culminate in advanced robotics projects.",
+      duration: "24 weeks total (3 phases)",
+      level: "Beginner to Advanced",
+      phases: [
+        {
+          title: "Phase 1 – Microbit Foundations",
+          duration: "8 weeks",
+          description: "Intro to block & Python coding on Microbit",
+          skills: ["Block Coding", "Python Basics", "LED Control", "Button Input", "Sensor Reading"],
+          projects: ["Traffic Lights", "Step Counter", "Reaction Timer"]
+        },
+        {
+          title: "Phase 2 – Arduino Basics", 
+          duration: "8 weeks",
+          description: "Arduino IDE, breadboard basics, circuits",
+          skills: ["Arduino IDE", "Breadboard Wiring", "Circuit Building", "Ultrasonic Sensors", "Servo Motors"],
+          projects: ["Obstacle-Avoiding Robot", "Smart Light System"]
+        },
+        {
+          title: "Phase 3 – Advanced Robotics",
+          duration: "8 weeks", 
+          description: "Combining Microbit & Arduino (communication)",
+          skills: ["Device Communication", "Advanced Sensors", "Robotics Logic", "System Integration"],
+          projects: ["Line-Following Robot", "Home Automation Prototype"]
+        }
+      ]
     },
     {
-      id: 4,
+      id: 2,
       icon: Code2,
-      title: "Python Programming Basics",
+      title: "Python Programming",
       age: "Ages 10-18",
-      description: "Learn Python programming through small, fun exercises and simple games. Perfect for beginners to coding.",
-      duration: "8 weeks (Saturdays) / 4 weeks (holidays)",
-      level: "Intermediate",
-      skills: ["Printing Messages", "Variables", "Basic Math in Python", "If Statements", "Loops"],
-      projects: ["Hello World App", "Age Checker", "Even or Odd Checker", "Simple Calculator"]
+      description: "Complete Python journey from fundamentals to building real applications. Progress through core concepts, data structures, to creating GUI applications and games.",
+      duration: "30 weeks total (3 phases)",
+      level: "Beginner to Advanced",
+      phases: [
+        {
+          title: "Phase 1 – Core Python",
+          duration: "10 weeks",
+          description: "Variables, operators, input/output",
+          skills: ["Variables & Data Types", "Operators", "Input/Output", "Conditionals", "Loops", "Functions"],
+          projects: ["Number Guesser", "Mini Calculator", "Quiz Game"]
+        },
+        {
+          title: "Phase 2 – Data & Structures",
+          duration: "10 weeks",
+          description: "Lists, dictionaries, tuples, sets",
+          skills: ["Lists & Tuples", "Dictionaries & Sets", "File Handling", "Error Handling", "Data Processing"],
+          projects: ["Expense Tracker", "Student Grade Analyzer"]
+        },
+        {
+          title: "Phase 3 – Python Applications",
+          duration: "10 weeks",
+          description: "Modules & libraries (random, math, datetime)",
+          skills: ["Python Libraries", "GUI Development", "Game Development", "Module Creation"],
+          projects: ["Password Manager", "Snake Game", "Pong Game"]
+        }
+      ]
     },
     {
-      id: 5,
+      id: 3,
       icon: Globe,
       title: "Web Development",
       age: "Ages 12-18",
-      description: "Create simple websites using HTML and CSS. Learn how to add text, images, links, and style your pages.",
-      duration: "10 weeks (Saturdays) / 5 weeks (holidays)",
-      level: "Intermediate - Advanced",
-      skills: ["HTML Basics", "CSS Styling", "Adding Links & Images", "Page Layout"],
-      projects: ["Personal Profile Page", "School Timetable Page", "Simple Blog Page", "Photo Gallery"]
+      description: "Build modern web applications from scratch. Master HTML/CSS foundations, add JavaScript interactivity, and create dynamic React applications.",
+      duration: "36 weeks total (3 phases)",
+      level: "Beginner to Advanced",
+      phases: [
+        {
+          title: "Phase 1 – Frontend Foundations",
+          duration: "12 weeks",
+          description: "HTML (structure), CSS (styling), intro to Git",
+          skills: ["HTML Structure", "CSS Styling", "Forms & Links", "Git Basics", "Responsive Design"],
+          projects: ["Personal Profile Page", "Recipe Page"]
+        },
+        {
+          title: "Phase 2 – JavaScript & Interactivity",
+          duration: "12 weeks", 
+          description: "Variables, loops, DOM manipulation",
+          skills: ["JavaScript Basics", "DOM Manipulation", "Event Handling", "Form Validation", "Animations"],
+          projects: ["Quiz App", "Calculator", "To-Do List"]
+        },
+        {
+          title: "Phase 3 – Modern Web Apps",
+          duration: "12 weeks",
+          description: "React basics (components, props, state)",
+          skills: ["React Components", "Props & State", "Hooks", "API Integration", "Modern Development"],
+          projects: ["Blog App", "Portfolio with React", "Weather App"]
+        }
+      ]
     },
     {
-      id: 6,
+      id: 4,
+      icon: Brain,
+      title: "AI & Machine Learning",
+      age: "Ages 14-18",
+      description: "Discover the world of artificial intelligence from basic concepts to building real AI applications. Learn about data, neural networks, and create your own AI projects.",
+      duration: "30 weeks total (3 phases)",
+      level: "Intermediate to Advanced",
+      phases: [
+        {
+          title: "Phase 1 – Intro to AI & Data",
+          duration: "10 weeks",
+          description: "Learn what AI is, how it uses data, and why ethics matter",
+          skills: ["AI Fundamentals", "Data Understanding", "Ethics in AI", "Pattern Recognition"],
+          projects: ["Simple Chatbot", "Image Classifier (Cat vs Dog)", "Yes/No Prediction"]
+        },
+        {
+          title: "Phase 2 – Core AI Skills",
+          duration: "10 weeks",
+          description: "Explore neural networks, supervised learning, and Python libraries",
+          skills: ["Neural Networks", "Supervised Learning", "Python AI Libraries", "Model Training"],
+          projects: ["Spam Detector", "Digit Recognizer", "Score Predictor"]
+        },
+        {
+          title: "Phase 3 – Applied AI",
+          duration: "10 weeks",
+          description: "Bring AI into apps and explore generative AI",
+          skills: ["AI Integration", "Generative AI", "Recommendation Systems", "Advanced Applications"],
+          projects: ["Smart Chatbot", "Recommender System", "Image Generator"]
+        }
+      ]
+    },
+    {
+      id: 5,
       icon: Monitor,
       title: "Computer Literacy Fundamentals",
       age: "Ages 6-11",
@@ -65,18 +160,7 @@ const Courses = () => {
       projects: ["Create a Digital Poster", "Organize Files in Folders", "Write a Short Document", "Make a Simple Slideshow"]
     },
     {
-      id: 7,
-      icon: Brain,
-      title: "AI & Machine Learning",
-      age: "Ages 14-18",
-      description: "A gentle introduction to AI and Machine Learning using beginner-friendly tools. Understand how computers recognize patterns.",
-      duration: "6 weeks (Saturdays) / 3 weeks (holidays)",
-      level: "Advanced",
-      skills: ["Patterns in Data", "Simple Predictions", "Image Recognition Basics"],
-      projects: ["Emoji Sorter", "Yes/No Prediction Game", "Simple Chatbot", "Color Classifier"]
-    },
-    {
-      id: 8,
+      id: 6,
       icon: BookOpen,
       title: "Computer Science Fundamentals",
       age: "Ages 9-12",
@@ -87,7 +171,7 @@ const Courses = () => {
       projects: ["Sorting Numbers Game", "Guess the Number Game", "Drawing Shapes with Instructions", "Treasure Hunt Algorithm"]
     },
     {
-      id: 9,
+      id: 7,
       icon: Gamepad2,
       title: "Programming with Minecraft",
       age: "Ages 8-11",
@@ -207,34 +291,79 @@ const Courses = () => {
                     </div>
                   </div>
 
-                  <div>
-                    <h4 className="font-semibold mb-3">What You'll Learn:</h4>
-                    <div className="grid grid-cols-2 gap-2">
-                      {course.skills.slice(0, 4).map((skill, idx) => (
-                        <div key={idx} className="flex items-center text-sm">
-                          <CheckCircle className="h-3 w-3 text-success mr-2 flex-shrink-0" />
-                          <span>{skill}</span>
-                        </div>
-                      ))}
+                  {course.phases ? (
+                    <div>
+                      <h4 className="font-semibold mb-4">Course Phases:</h4>
+                      <div className="space-y-4">
+                        {course.phases.map((phase, phaseIdx) => (
+                          <div key={phaseIdx} className="border border-border rounded-lg p-4 bg-muted/30">
+                            <div className="flex items-center justify-between mb-2">
+                              <h5 className="font-medium text-sm">{phase.title}</h5>
+                              <Badge variant="outline" className="text-xs">{phase.duration}</Badge>
+                            </div>
+                            <p className="text-xs text-muted-foreground mb-3">{phase.description}</p>
+                            
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                              <div>
+                                <h6 className="font-medium text-xs mb-2">Skills:</h6>
+                                <div className="space-y-1">
+                                  {phase.skills.slice(0, 3).map((skill, skillIdx) => (
+                                    <div key={skillIdx} className="flex items-center text-xs">
+                                      <CheckCircle className="h-2 w-2 text-success mr-2 flex-shrink-0" />
+                                      <span>{skill}</span>
+                                    </div>
+                                  ))}
+                                </div>
+                              </div>
+                              
+                              <div>
+                                <h6 className="font-medium text-xs mb-2">Projects:</h6>
+                                <div className="space-y-1">
+                                  {phase.projects.slice(0, 2).map((project, projectIdx) => (
+                                    <div key={projectIdx} className="flex items-center text-xs text-muted-foreground">
+                                      <Award className="h-2 w-2 text-primary mr-2 flex-shrink-0" />
+                                      <span>{project}</span>
+                                    </div>
+                                  ))}
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
                     </div>
-                  </div>
+                  ) : (
+                    <>
+                      <div>
+                        <h4 className="font-semibold mb-3">What You'll Learn:</h4>
+                        <div className="grid grid-cols-2 gap-2">
+                          {course.skills.slice(0, 4).map((skill, idx) => (
+                            <div key={idx} className="flex items-center text-sm">
+                              <CheckCircle className="h-3 w-3 text-success mr-2 flex-shrink-0" />
+                              <span>{skill}</span>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
 
-                  <div>
-                    <h4 className="font-semibold mb-3">Projects You'll Build:</h4>
-                    <div className="space-y-1">
-                      {course.projects.slice(0, 2).map((project, idx) => (
-                        <div key={idx} className="flex items-center text-sm text-muted-foreground">
-                          <Award className="h-3 w-3 text-primary mr-2 flex-shrink-0" />
-                          <span>{project}</span>
+                      <div>
+                        <h4 className="font-semibold mb-3">Projects You'll Build:</h4>
+                        <div className="space-y-1">
+                          {course.projects.slice(0, 2).map((project, idx) => (
+                            <div key={idx} className="flex items-center text-sm text-muted-foreground">
+                              <Award className="h-3 w-3 text-primary mr-2 flex-shrink-0" />
+                              <span>{project}</span>
+                            </div>
+                          ))}
+                          {course.projects.length > 2 && (
+                            <div className="text-xs text-muted-foreground">
+                              +{course.projects.length - 2} more projects
+                            </div>
+                          )}
                         </div>
-                      ))}
-                      {course.projects.length > 2 && (
-                        <div className="text-xs text-muted-foreground">
-                          +{course.projects.length - 2} more projects
-                        </div>
-                      )}
-                    </div>
-                  </div>
+                      </div>
+                    </>
+                  )}
 
                   <div className="flex gap-3">
                     <Button className="flex-1 group-hover:bg-primary group-hover:text-primary-foreground transition-all">

@@ -26,29 +26,29 @@ const Home = () => {
       icon: Cpu,
       title: "Robotics with Microbit & Arduino",
       age: "Ages 10-18",
-      description: "Learn to design, build, and program simple robots with Microbit and Arduino.",
-      duration: "8 weeks"
+      description: "Master robotics through 3 progressive phases: Microbit foundations, Arduino basics, and advanced robotics projects.",
+      duration: "24 weeks (3 phases)"
     },
     {
       icon: Code2,
       title: "Python Programming",
       age: "Ages 10-18",
-      description: "Start coding with Python and create games, apps, and projects step by step.",
-      duration: "12 weeks"
+      description: "Complete Python journey from core programming to building real applications with GUIs and games.",
+      duration: "30 weeks (3 phases)"
     },
     {
       icon: Globe,
       title: "Web Development",
       age: "Ages 12-18", 
-      description: "Build modern websites using HTML, CSS, JavaScript, and React.",
-      duration: "14 weeks"
+      description: "Build modern web applications from HTML basics to React, covering frontend foundations and interactivity.",
+      duration: "36 weeks (3 phases)"
     },
     {
       icon: Brain,
       title: "AI & Machine Learning",
       age: "Ages 14-18",
-      description: "EDiscover artificial intelligence and create your own smart applications.",
-      duration: "10 weeks"
+      description: "Discover artificial intelligence from basic concepts to applied AI projects including chatbots and image generators.",
+      duration: "30 weeks (3 phases)"
     }
   ];
 
