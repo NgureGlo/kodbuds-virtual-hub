@@ -14,7 +14,93 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      enrollments: {
+        Row: {
+          child_age_class: string
+          course_of_interest: string
+          created_at: string
+          email: string
+          id: string
+          name: string
+          phone: string
+        }
+        Insert: {
+          child_age_class: string
+          course_of_interest: string
+          created_at?: string
+          email: string
+          id?: string
+          name: string
+          phone: string
+        }
+        Update: {
+          child_age_class?: string
+          course_of_interest?: string
+          created_at?: string
+          email?: string
+          id?: string
+          name?: string
+          phone?: string
+        }
+        Relationships: []
+      }
+      messages: {
+        Row: {
+          created_at: string
+          email: string
+          id: string
+          message: string
+          name: string
+          phone: string
+        }
+        Insert: {
+          created_at?: string
+          email: string
+          id?: string
+          message: string
+          name: string
+          phone: string
+        }
+        Update: {
+          created_at?: string
+          email?: string
+          id?: string
+          message?: string
+          name?: string
+          phone?: string
+        }
+        Relationships: []
+      }
+      trial_requests: {
+        Row: {
+          child_age_class: string
+          created_at: string
+          email: string
+          id: string
+          name: string
+          phone: string
+          preferred_time: string
+        }
+        Insert: {
+          child_age_class: string
+          created_at?: string
+          email: string
+          id?: string
+          name: string
+          phone: string
+          preferred_time: string
+        }
+        Update: {
+          child_age_class?: string
+          created_at?: string
+          email?: string
+          id?: string
+          name?: string
+          phone?: string
+          preferred_time?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
