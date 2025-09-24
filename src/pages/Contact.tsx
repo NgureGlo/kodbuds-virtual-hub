@@ -20,8 +20,12 @@ import {
   Youtube,
   Calendar,
   Users,
-  Shield
+  Shield,
+  Loader2
 } from 'lucide-react';
+import { useToast } from '@/hooks/use-toast';
+import { supabase } from '@/integrations/supabase/client';
+import { DialogForms } from '@/components/ui/dialog-forms';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -32,14 +36,64 @@ const Contact = () => {
     course: '',
     message: ''
   });
-
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isTrialOpen, setIsTrialOpen] = useState(false);
+  const { toast } = useToast();
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Here you would typically send the form data to your backend
-    console.log('Form submitted:', formData);
-    setIsSubmitted(true);
+    setIsSubmitting(true);
+
+    try {
+      // Save to database
+      const { error: dbError } = await supabase
+        .from('messages')
+        .insert({
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone || '',
+          message: formData.message
+        });
+
+      if (dbError) throw dbError;
+
+      // Send email notification
+      const { error: emailError } = await supabase.functions.invoke('send-notification', {
+        body: {
+          type: 'contact_message',
+          data: {
+            name: formData.name,
+            email: formData.email,
+            phone: formData.phone,
+            childAge: formData.childAge,
+            course: formData.course,
+            message: formData.message
+          }
+        }
+      });
+
+      if (emailError) {
+        console.error('Email error:', emailError);
+        // Don't throw - form submission succeeded, email is secondary
+      }
+
+      toast({
+        title: "Success!",
+        description: "Your message has been sent successfully. We'll get back to you soon.",
+      });
+
+      setIsSubmitted(true);
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      toast({
+        title: "Error",
+        description: "Something went wrong. Please try again.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleInputChange = (field: string, value: string) => {
@@ -249,9 +303,24 @@ const Contact = () => {
                       />
                     </div>
 
-                    <Button type="submit" variant="hero" size="lg" className="w-full">
-                      Send Message
-                      <Send className="ml-2 h-5 w-5" />
+                    <Button 
+                      type="submit" 
+                      variant="hero" 
+                      size="lg" 
+                      className="w-full"
+                      disabled={isSubmitting}
+                    >
+                      {isSubmitting ? (
+                        <>
+                          <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                          Sending Message...
+                        </>
+                      ) : (
+                        <>
+                          Send Message
+                          <Send className="ml-2 h-5 w-5" />
+                        </>
+                      )}
                     </Button>
                   </form>
                 </CardContent>
@@ -287,7 +356,10 @@ const Contact = () => {
                     Not sure which course is right for your child? Book a free 45-minute trial class 
                     to experience our teaching style and meet our instructors.
                   </p>
-                  <Button variant="accent">
+                  <Button 
+                    variant="accent"
+                    onClick={() => setIsTrialOpen(true)}
+                  >
                     Schedule Free Trial
                   </Button>
                 </CardContent>
@@ -344,6 +416,13 @@ const Contact = () => {
           </div>
         </div>
       </section>
+
+      <DialogForms
+        isTrialOpen={isTrialOpen}
+        isEnrollmentOpen={false}
+        onTrialClose={() => setIsTrialOpen(false)}
+        onEnrollmentClose={() => {}}
+      />
     </div>
   );
 };

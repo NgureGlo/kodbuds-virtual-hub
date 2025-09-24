@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
@@ -17,8 +18,11 @@ import {
   CheckCircle,
   Gamepad2
 } from 'lucide-react';
+import { DialogForms } from '@/components/ui/dialog-forms';
 
 const Courses = () => {
+  const [isTrialOpen, setIsTrialOpen] = useState(false);
+  const [isEnrollmentOpen, setIsEnrollmentOpen] = useState(false);
   const courses = [
     {
       id: 1,
@@ -366,11 +370,18 @@ const Courses = () => {
                   )}
 
                   <div className="flex gap-3">
-                    <Button className="flex-1 group-hover:bg-primary group-hover:text-primary-foreground transition-all">
+                    <Button 
+                      className="flex-1 group-hover:bg-primary group-hover:text-primary-foreground transition-all"
+                      onClick={() => setIsEnrollmentOpen(true)}
+                    >
                       Enroll Now
                       <ArrowRight className="ml-2 h-4 w-4" />
                     </Button>
-                    <Button variant="outline" size="sm">
+                    <Button 
+                      variant="outline" 
+                      size="sm"
+                      onClick={() => setIsTrialOpen(true)}
+                    >
                       Free Trial
                     </Button>
                   </div>
@@ -450,15 +461,32 @@ const Courses = () => {
             Book a free trial class to see which course is the perfect fit for your child.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="accent" size="lg" className="text-lg">
+            <Button 
+              variant="accent" 
+              size="lg" 
+              className="text-lg"
+              onClick={() => setIsTrialOpen(true)}
+            >
               Book Free Trial Class
             </Button>
-            <Button variant="outline" size="lg" className="text-lg bg-white/10 border-white/30 text-white hover:bg-white/20">
+            <Button 
+              variant="outline" 
+              size="lg" 
+              className="text-lg bg-white/10 border-white/30 text-white hover:bg-white/20"
+              onClick={() => (window.location.href = '/contact')}
+            >
               Speak with Advisor
             </Button>
           </div>
         </div>
       </section>
+
+      <DialogForms
+        isTrialOpen={isTrialOpen}
+        isEnrollmentOpen={isEnrollmentOpen}
+        onTrialClose={() => setIsTrialOpen(false)}
+        onEnrollmentClose={() => setIsEnrollmentOpen(false)}
+      />
     </div>
   );
 };

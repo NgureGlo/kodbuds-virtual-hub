@@ -2,9 +2,11 @@ import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, X, Code2, BookOpen, Users, Phone, Home } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
+import { DialogForms } from '@/components/ui/dialog-forms';
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isEnrollmentOpen, setIsEnrollmentOpen] = useState(false);
   const location = useLocation();
 
   const isActive = (path: string) => location.pathname === path;
@@ -45,7 +47,11 @@ const Navigation = () => {
                 <span>{item.name}</span>
               </Link>
             ))}
-            <Button variant="accent" size="sm">
+            <Button 
+              variant="accent" 
+              size="sm"
+              onClick={() => setIsEnrollmentOpen(true)}
+            >
               Enroll Now
             </Button>
           </div>
@@ -82,7 +88,12 @@ const Navigation = () => {
                 </Link>
               ))}
               <div className="pt-2">
-                <Button variant="accent" size="sm" className="w-full">
+                <Button 
+                  variant="accent" 
+                  size="sm" 
+                  className="w-full"
+                  onClick={() => setIsEnrollmentOpen(true)}
+                >
                   Enroll Now
                 </Button>
               </div>
@@ -90,6 +101,13 @@ const Navigation = () => {
           </div>
         )}
       </div>
+      
+      <DialogForms
+        isTrialOpen={false}
+        isEnrollmentOpen={isEnrollmentOpen}
+        onTrialClose={() => {}}
+        onEnrollmentClose={() => setIsEnrollmentOpen(false)}
+      />
     </nav>
   );
 };

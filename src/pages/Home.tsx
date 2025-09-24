@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -19,8 +20,11 @@ import {
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import heroImage from '@/assets/hero-image.jpg';
+import { DialogForms } from '@/components/ui/dialog-forms';
 
 const Home = () => {
+  const [isTrialOpen, setIsTrialOpen] = useState(false);
+  const [isEnrollmentOpen, setIsEnrollmentOpen] = useState(false);
   const courses = [
     {
       icon: Cpu,
@@ -95,7 +99,12 @@ const Home = () => {
                 Interactive programming courses for ages 6-18. From Robotics to AI to Web Development - all from the comfort of home.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button variant="accent" size="lg" className="text-lg">
+                <Button 
+                  variant="accent" 
+                  size="lg" 
+                  className="text-lg"
+                  onClick={() => setIsTrialOpen(true)}
+                >
                   Start Free Trial
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
@@ -223,7 +232,12 @@ const Home = () => {
             Join thousands of students worldwide who are building the future with code.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="accent" size="lg" className="text-lg">
+            <Button 
+              variant="accent" 
+              size="lg" 
+              className="text-lg"
+              onClick={() => setIsTrialOpen(true)}
+            >
               Book Free Trial Class
             </Button>
             <Link to="/contact">
@@ -234,6 +248,13 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      <DialogForms
+        isTrialOpen={isTrialOpen}
+        isEnrollmentOpen={isEnrollmentOpen}
+        onTrialClose={() => setIsTrialOpen(false)}
+        onEnrollmentClose={() => setIsEnrollmentOpen(false)}
+      />
     </div>
   );
 };
