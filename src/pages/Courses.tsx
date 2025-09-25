@@ -30,26 +30,26 @@ const Courses = () => {
       title: "Robotics with Microbit & Arduino",
       age: "Ages 10-18",
       description: "Master robotics through a comprehensive 3-phase program. Start with Microbit foundations, advance to Arduino circuits, and culminate in advanced robotics projects.",
-      duration: "24 weeks total (3 phases)",
+      duration: "30 weeks total (3 phases)",
       level: "Beginner to Advanced",
       phases: [
         {
           title: "Phase 1 – Microbit Foundations",
-          duration: "8 weeks",
+          duration: "10 weeks",
           description: "Intro to block & Python coding on Microbit",
           skills: ["Block Coding", "Python Basics", "LED Control", "Button Input", "Sensor Reading"],
           projects: ["Traffic Lights", "Step Counter", "Reaction Timer"]
         },
         {
           title: "Phase 2 – Arduino Basics", 
-          duration: "8 weeks",
+          duration: "10 weeks",
           description: "Arduino IDE, breadboard basics, circuits",
           skills: ["Arduino IDE", "Breadboard Wiring", "Circuit Building", "Ultrasonic Sensors", "Servo Motors"],
           projects: ["Obstacle-Avoiding Robot", "Smart Light System"]
         },
         {
           title: "Phase 3 – Advanced Robotics",
-          duration: "8 weeks", 
+          duration: "10 weeks", 
           description: "Combining Microbit & Arduino (communication)",
           skills: ["Device Communication", "Advanced Sensors", "Robotics Logic", "System Integration"],
           projects: ["Line-Following Robot", "Home Automation Prototype"]
@@ -158,7 +158,7 @@ const Courses = () => {
       title: "Computer Literacy Fundamentals",
       age: "Ages 6-11",
       description: "Learn essential computer skills like typing, saving files, using safe passwords, and browsing safely.",
-      duration: "4 weeks (Saturdays) / 2 weeks (holidays)",
+      duration: "12 weeks (Saturdays) / 4 weeks (holidays)",
       level: "Beginner",
       skills: ["Typing Practice", "File Saving", "Basic Internet Safety", "Using Simple Apps"],
       projects: ["Create a Digital Poster", "Organize Files in Folders", "Write a Short Document", "Make a Simple Slideshow"]
@@ -169,7 +169,7 @@ const Courses = () => {
       title: "Computer Science Fundamentals",
       age: "Ages 9-12",
       description: "Learn problem-solving through simple algorithms and games. Understand how computers follow step-by-step instructions.",
-      duration: "8 weeks (Saturdays) / 4 weeks (holidays)",
+      duration: "12 weeks (Saturdays) / 4 weeks (holidays)",
       level: "Beginner",
       skills: ["Step-by-Step Thinking", "Basic Algorithms", "Patterns & Sequences"],
       projects: ["Sorting Numbers Game", "Guess the Number Game", "Drawing Shapes with Instructions", "Treasure Hunt Algorithm"]
@@ -180,7 +180,7 @@ const Courses = () => {
       title: "Programming with Minecraft",
       age: "Ages 8-11",
       description: "Learn coding by making fun changes inside Minecraft. Use block-based coding to create cool worlds and simple automations.",
-      duration: "6 weeks (Saturdays) / 3 weeks (holidays)",
+      duration: "12 weeks (Saturdays) / 4 weeks (holidays)",
       level: "Beginner",
       skills: ["Block Coding", "Loops", "Events", "Game Design Basics"],
       projects: ["Build a House Automatically", "Make Fireworks", "Create a Maze", "Simple Mini-Game"]

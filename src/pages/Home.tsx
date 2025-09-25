@@ -31,7 +31,7 @@ const Home = () => {
       title: "Robotics with Microbit & Arduino",
       age: "Ages 10-18",
       description: "Master robotics through 3 progressive phases: Microbit foundations, Arduino basics, and advanced robotics projects.",
-      duration: "24 weeks (3 phases)"
+      duration: "30 weeks (3 phases)"
     },
     {
       icon: Code2,
