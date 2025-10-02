@@ -39,12 +39,6 @@ const About = () => {
     }
   ];
 
-  const stats = [
-    { number: "500+", label: "Students Enrolled" },
-    { number: "9", label: "Course Programs" },
-    { number: "95%", label: "Parent Satisfaction" },
-    { number: "24/7", label: "Support Available" }
-  ];
 
   const benefits = [
     "Problem-solving and critical thinking skills",
@@ -101,16 +95,32 @@ const About = () => {
               </Link>
             </div>
             
-            <div className="grid grid-cols-2 gap-6">
-              {stats.map((stat, index) => (
-                <Card key={index} className="text-center hover:shadow-medium transition-all duration-300">
-                  <CardContent className="pt-6">
-                    <div className="text-3xl font-bold text-primary mb-2">{stat.number}</div>
-                    <div className="text-muted-foreground">{stat.label}</div>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
+            <Card className="p-8 bg-gradient-to-br from-primary/10 to-accent/10 border-primary/20">
+              <CardHeader>
+                <div className="flex items-center mb-4">
+                  <Lightbulb className="h-8 w-8 text-primary mr-3" />
+                  <CardTitle className="text-2xl">Our Vision</CardTitle>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <p className="text-lg text-muted-foreground mb-4 leading-relaxed">
+                  We envision a future where every child, regardless of their background or location, 
+                  has the opportunity to become a digital creator and innovator. Technology should be 
+                  a tool for empowerment, not intimidation.
+                </p>
+                <p className="text-lg text-muted-foreground mb-4 leading-relaxed">
+                  Through our virtual learning platform, we're building a global community of young 
+                  technologists who will shape tomorrow's digital landscape. We see a world where 
+                  children don't just consume technology—they understand it, control it, and create with it.
+                </p>
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  Our ultimate goal is to democratize tech education, making it as accessible as 
+                  traditional schooling while maintaining the highest standards of quality, safety, 
+                  and engagement. We're not just teaching code; we're nurturing the next generation 
+                  of problem solvers, entrepreneurs, and change-makers.
+                </p>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
